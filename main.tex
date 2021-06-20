@@ -1,6 +1,23 @@
 \documentclass{report}
 
+\usepackage[utf8]{inputenc}
+
+\usepackage{titlesec}
+\usepackage{palatino}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\title{\bf ECCE proposal working outline}
+\author{Proposal committee: Tom Cormier, Richard Milner, Peter Steinberg}
+\date{June 20, 2021}
+
 \begin{document}
+\maketitle
 \setcounter{tocdepth}{5}
 \tableofcontents
 %
@@ -11,12 +28,13 @@
 \subsubsection{FL etc}
 \subsection{2. Transverse motion of quarks and gluons inside the nucleon}
 \subsubsection{TMDs in ep, eA with inclusive and SIDIS}
-\subsection{3. Spatial distribution of quarks and gluons inside the nucleon}
+\subsection{3. Spatial distribution of quarks and gluons inside mesons, nucleons, and nuclei}
 \subsubsection{a. DVCS, DVMP}
 \subsection{4. Gluon saturation in nuclei}
 \subsubsection{a. nPDF, FL, inclusive \& diffractive charm, inclusive diffraction}
 \subsection{5. Hadronization - jets}
 %
+\newpage
 \section{B. Detector design (21 pages)}
 \subsection{1. Discussion of EIC experimental IRs (1 page?)}
 \subsubsection{a. IR6}
@@ -42,10 +60,11 @@
 \paragraph{i hpDIRC}
 \paragraph{ii. AC-LGAD}
 \subsubsection{b. Forward PID}
-\paragraph{i. Hadron PID: dRICH & TOF}
+\paragraph{i. Hadron PID: dRICH \& TOF}
 \paragraph{ii. Electron PID: TOF \& Aerogel}
 \subsubsection{c. Backward PID}
 \paragraph{i. Hadron PID mRICH}
+\newpage
 \subsection{5. Far forward detectors (1 page)}
 \subsubsection{a. B0 spectrometer}
 \subsubsection{b. Roman pot detectors}
@@ -53,8 +72,8 @@
 \subsubsection{d. Zero degree detectors}
 \subsubsection{e. Low-Q2 taggers}
 \subsubsection{f. Luminosity detector}
-\subsection{6. Data acquisition & streaming readout (1 page)}
-\subsection{7. Assessment of proposed detector technology, needed R&D, potential risks}
+\subsection{6. Data acquisition \& streaming readout (1 page)}
+\subsection{7. Assessment of proposed detector technology, needed R\&D, potential risks}
 %
 \section{C. Physics performance of ECCE detector (15 pages)}
 \subsection{1. Mass}
@@ -66,7 +85,7 @@
 \subsubsection{c. Exclusive j/psi}
 \subsection{3. Momentum Imaging}
 \subsubsection{a. Quark sivers function (SIDIS)}
-\subsection{4. Spin & Flavor}
+\subsection{4. Spin \& Flavor}
 \subsubsection{a. A1p, A1n}
 \subsubsection{b. Twist-3 gTq}
 \subsubsection{c. Sea quark helicities}
@@ -79,7 +98,8 @@
 \subsection{6. Emergent properties}
 \subsection{7. Hadronization (propagation in CNM)}
 \subsubsection{a. In medium modification of HF}
-\subsectionP{8. BSM}
+\newpage
+\subsection{8. BSM}
 \subsubsection{a. Parity violating asymmetries}
 \subsubsection{b. CLFV}
 \subsection{9. Proposed physics program (e.g. proposed run plan for first 5 years)}
@@ -114,7 +134,7 @@
 \subsection{6. BSM \& precision electroweak}
 \subsubsection{a. Fill in notes here}
 %
-\section{C. DAQ & online computing}
+\section{C. DAQ \& online computing}
 \subsection{1. Fill in notes here}
 %
 \section{D. Offline computing model}
